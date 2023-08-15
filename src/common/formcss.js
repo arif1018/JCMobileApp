@@ -34,5 +34,11 @@ module.exports = {
         fontSize:17,
         textAlign:'center',
         marginVertical:10
-      }
+      },
+      errorMsg:{
+        color:'white',
+        backgroundColor:'red',
+        padding:10,
+        borderRadius:10
+      },  
 }
