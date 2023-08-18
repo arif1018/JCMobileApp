@@ -5,17 +5,22 @@ import React, { useState } from 'react'
 import { head1, head2, formgroup, label, input, link, link2, errorMsg } from '../common/formcss'
 import { button1 } from '../common/button'
 
+
 const Login = ({navigation}) => {
+  const [errmsg, setErrorMsg] = useState(null)
+
+
   const [fdata, setFormData] = useState({
     email:'',
     password:''
   })
-  const [errmsg, setErrorMsg] = useState(null)
   const sendToBack = ()=>{
     if(fdata.email == '' ||
     fdata.password == ''){
       setErrorMsg('All Fields Are Required!...')
     }else{
+      const userData = {email:fdata.email, password:fdata.email}
+
       fetch('https://server.powerad.online/api/users/login',{
         method:'post',
         headers:{

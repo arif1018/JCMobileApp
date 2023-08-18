@@ -1,4 +1,5 @@
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import * as React from 'react'
+import { StyleSheet } from 'react-native';
 import WelcomeScreen from './src/screens/Welcome'
 import Login from './src/screens/Login'
 import SignUp from './src/screens/SignUp'

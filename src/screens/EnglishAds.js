@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const EnglishAds = () => {
+const EnglishAds = ({UserD}) => {
   return (
     <View>
-      <Text>EnglishAds</Text>
+      <Text>{}EnglishAds</Text>
     </View>
   )
 }
